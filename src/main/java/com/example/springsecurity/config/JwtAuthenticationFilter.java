@@ -18,6 +18,7 @@ import java.io.IOException;
 // config jwt filter
 @Component
 @RequiredArgsConstructor
+// lớp filter lọc giá trị token từ req.header
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     private final JwtService jwtService;
